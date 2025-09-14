@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabrielle Bromberg | Artista 3D</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Gabrielle Bromberg</a>
+            <ul>
+                <li><a href="#portfolio">Trabalhos 3D</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="container">
+            <h1>Criando Mundos, Um Vértice de Cada Vez.</h1>
+            <p>Artista 3D especializada em modelagem de personagens e ambientes que dão vida a histórias.</p>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2>Trabalhos 3D</h2>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <h3>Projeto "Cyborg Hunter"</h3>
+                    <p>Modelagem de personagem para um game de ficção científica.</p>
+                    <button class="view-model-btn" data-model-path="assets/modelo1.obj" data-canvas-target="canvas-container-1">Ver Modelo 3D</button>
+                    <div class="p5-canvas-container" id="canvas-container-1"></div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Cenário "Taverna Elfica"</h3>
+                    <p>Ambiente renderizado com foco em iluminação e texturização.</p>
+                    <button class="view-model-btn" data-model-path="assets/modelo2.obj" data-canvas-target="canvas-container-2">Ver Modelo 3D</button>
+                    <div class="p5-canvas-container" id="canvas-container-2"></div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Escultura "Dragão Ancestral"</h3>
+                    <p>Escultura digital detalhada feita em ZBrush e renderizada no Blender.</p>
+                    <button class="view-model-btn" data-model-path="assets/modelo3.obj" data-canvas-target="canvas-container-3">Ver Modelo 3D</button>
+                    <div class="p5-canvas-container" id="canvas-container-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Gabrielle Bromberg é uma artista 3D apaixonada por criar mundos e personagens que contam histórias. Com uma abordagem meticulosa aos detalhes e uma imaginação vívida, Gabrielle explora as possibilidades infinitas da arte digital, transformando conceitos em experiências visuais cativantes. Seu trabalho reflete uma busca constante pela inovação e pela beleza na forma tridimensional, convidando o espectador a mergulhar em cada universo criado.
+                    </p>
+                    <h4>Softwares:</h4>
+                    <span>Blender, ZBrush, Substance Painter, Maya</span>
+                    <h4>Especialidades:</h4>
+                    <span>Modelagem de Personagens, Ambientes, Texturização, Renderização Fotorrealista.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Vamos Conversar?</h2>
+            <p>Se você tem um projeto em mente ou gostaria de saber mais, entre em contato.</p>
+            <div class="contact-links">
+                <a href="mailto:contato.ficticio@email.com">contato.ficticio@email.com</a>
+                <a href="#" target="_blank">ArtStation</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gabrielle Bromberg. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="sketch.js"></script>
+
+</body>
+</html>
