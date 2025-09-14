@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 p.lights(); // Mantenha as luzes para ver a forma do objeto com sombras!
                 p.orbitControl();
                 p.rotateZ(p.PI);
-                
+                p.scale(10)
                 
                 // --- MUDANÇA PARA OBJETO BRANCO (NOVO CÓDIGO) ---
                 p.noStroke(); // Remove as linhas de contorno pretas, se houver
