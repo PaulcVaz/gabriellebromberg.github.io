@@ -67,8 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 p.background('#1A1A2E');
                 p.lights(); // Mantenha as luzes para ver a forma do objeto com sombras!
                 p.orbitControl();
-            
-                p.translate(0, -50, 0); 
                 p.rotateZ(p.PI);
                 
                 
@@ -80,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // --------------------------------------------------
                 
                 p.model(model);
-                p.scale(0.01);
+                p.scale(0.1);
             };
         };
     };
