@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
                 p.translate(0, -50, 0); 
                 p.rotateZ(p.PI);
-                p.scale(0.01);
+                
                 
                 // --- MUDANÇA PARA OBJETO BRANCO (NOVO CÓDIGO) ---
                 p.noStroke(); // Remove as linhas de contorno pretas, se houver
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 p.specularMaterial(200); // Um material que reflete luz, dando um toque de brilho.
                                          // O valor 200 controla a intensidade do brilho.
                 // --------------------------------------------------
-                p.scale(0.01);
+                
                 p.model(model);
                 p.scale(0.01);
             };
