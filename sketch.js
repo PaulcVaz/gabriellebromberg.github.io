@@ -64,13 +64,21 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             p.draw = () => {
-                p.background('#1A1A2E'); // Cor de fundo do canvas
-                p.lights(); // Adiciona iluminação ambiente e direcional
-                p.orbitControl(); // Permite controlar a câmera com o mouse
-
-                p.scale(50); // Ajuste este valor dependendo do tamanho do seu modelo
-                p.rotateX(p.PI); // Ajuste a orientação inicial se necessário
-                p.normalMaterial(); // Material padrão para visualizar a forma
+                p.background('#1A1A2E');
+                p.lights(); // Mantenha as luzes para ver a forma do objeto com sombras!
+                p.orbitControl();
+            
+                p.translate(0, -50, 0); 
+                p.rotateZ(p.PI);
+                p.scale(50);
+                
+                // --- MUDANÇA PARA OBJETO BRANCO (NOVO CÓDIGO) ---
+                p.noStroke(); // Remove as linhas de contorno pretas, se houver
+                p.fill(255);  // Define a cor de preenchimento como branco puro (RGB 255, 255, 255)
+                p.specularMaterial(200); // Um material que reflete luz, dando um toque de brilho.
+                                         // O valor 200 controla a intensidade do brilho.
+                // --------------------------------------------------
+            
                 p.model(model);
             };
         };
