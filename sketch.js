@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
                 p.translate(0, -50, 0); 
                 p.rotateZ(p.PI);
-                p.scale(1);
+                p.scale(0.1);
                 
                 // --- MUDANÇA PARA OBJETO BRANCO (NOVO CÓDIGO) ---
                 p.noStroke(); // Remove as linhas de contorno pretas, se houver
