@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // --------------------------------------------------
                 p.scale(0.01);
                 p.model(model);
+                p.scale(0.01);
             };
         };
     };
