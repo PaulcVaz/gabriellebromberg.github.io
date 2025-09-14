@@ -76,9 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 p.specularMaterial(200); // Um material que reflete luz, dando um toque de brilho.
                                          // O valor 200 controla a intensidade do brilho.
                 // --------------------------------------------------
-                
                 p.model(model);
-                p.scale(0.1);
             };
         };
     };
