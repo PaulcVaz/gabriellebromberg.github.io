@@ -50,7 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             p.setup = () => {
                 p.createCanvas(canvasSize, canvasSize, p.WEBGL);
-
+                const cameraZ = (p.height / 2.0) / p.tan(p.PI * 30.0 / 180.0);
+                p.camera(0, 0, cameraZ * 1.5);
                 // Cria um botão "Fechar" dinamicamente
                 closeButton = p.createButton('X');
                 closeButton.addClass('close-canvas-btn');
